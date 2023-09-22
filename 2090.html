@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2090 INNOVATE-2-SUSTAIN</title>
+    <style>
+         body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;    
+            color: #000000;
+            
+        }
+
+         /* Style for the logo container */
+        .logo {
+         position: absolute;
+         top: 4px; /* Adjust the top position as needed */
+         right: 15px; /* Adjust the right position as needed */
+
+        }
+        .navbar {
+            background-color: rgb(149, 127, 215);
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 24px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+        .navbar {
+          background-color: #f1ffe4;
+          overflow: hidden;
+          display: flex;
+          justify-content: center; /* Center horizontally */
+          align-items: center; /* Center vertically */
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1470px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header {
+            background-image: url('ggg.png'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            padding: 60px;
+            text-align: center;
+            position: relative; 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .header h1 {
+            font-size: 150px;
+            margin-bottom: 15px;
+        }
+        .header-text:hover {
+            color: #08009e; /* Change to your desired hover color */
+            transition: color 0.3s; /* Add smooth transition */
+        }
+        .header p {
+            font-size: 65px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #fcc153;
+            color: rgb(0, 0, 0);
+            padding: 12px 24px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* In Association With Section Styles */
+/* In Association With Section Styles */
+.association {
+    background-color: #ffffff; /* Dark background */
+    padding: 40px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.association h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000000; /* White text */
+}
+
+/* Association Logos Styles */
+.association-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-cube {
+    perspective: 1200px;
+}
+
+.cube {
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: spin 15s linear infinite;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.face img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+.front  { transform: translateZ(125px); }
+.back   { transform: rotateY(180deg) translateZ(125px); }
+.right  { transform: rotateY(90deg) translateZ(125px); }
+.left   { transform: rotateY(-90deg) translateZ(125px); }
+.top    { transform: rotateX(90deg) translateZ(125px); }
+.bottom { transform: rotateX(-90deg) translateZ(125px); }
+
+/* Cube rotation animation */
+@keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+        .top-left-logo {
+            position: absolute;
+            top: 1px; /* Adjust as needed */
+            left: 15px; /* Adjust as needed */
+            max-width: 75px; /* Adjust as needed */
+        }
+
+        /* About the Event Section Styles */
+                 /* Countdown Timer Styles */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.timer span {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff; /* Timer digit color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.timer span:hover {
+    color: #0056b3; /* Color change on hover */
+}
+
+.timer span + span {
+    margin-top: 5px;
+    font-size: 16px; /* Timer label font size */
+    color: #333; /* Timer label color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.timer span + span:hover {
+    color: #555; /* Color change on hover */
+}
+        .about-event {
+            background-color: #b8aefa;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .about-event h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .about-event p {
+            font-size: 30px;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 1400px;
+            padding: 0 20px;
+        }
+        /* Key Highlights Section Styles */
+    .about-event {
+    background-image: url('df.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Keep background fixed while scrolling */
+    color: rgb(0, 0, 0); /* Adjust text color for readability */
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+.about-event h2 {
+    font-size: 46px;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Optional: Uppercase text */
+}
+
+.about-event p {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+
+.key-highlights {
+    background-image: url('city.jpg');
+    background-color: #dcffbb;
+    padding: 40px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 10px; /* Add rounded corners */
+
+}
+.about-event {
+    /* ... previous styles ... */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Add a border for separation */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.key-highlights h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.key-highlights p {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 0 20px;
+}
+
+.key-highlights ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.key-highlights ul li {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+        .brochure {
+            background-color: #f1ffe4;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .brochure h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .brochure img {
+            max-width: 2000%;
+            height: auto;
+            border-radius: 20px; /* Add rounded edges */
+            display: block; /* Center-align images */
+            margin: 0 auto; /* Center-align images */
+        }
+
+        .schedule {
+            background-color: #f1ffe4;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .schedule h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .schedule p {
+            font-size: 20px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1400px;
+            padding: 0 20px;
+        }
+        .team {                                 
+           background-color: #f1ffe4;
+           padding: 40px 0;
+           text-align: center;
+        }
+        .team h2 {
+         font-size: 40px;
+         margin-bottom: 20px;
+        }
+        .volunteers img {
+         max-width: 1200px; /* Adjust as needed */
+         height: auto;
+        }
+        /* Rules and Regulations Section Styles */
+
+        /* Rules and Regulations Section Styles */
+.rules {
+    background-color: #dcffbb;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rule {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px; 
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.rule:hover {
+    background-color: #f48c06;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.rule-icon {
+    font-size: 30px;
+    color: #f48c06;
+    margin-right: 20px;
+}
+
+.rule-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.rule-text {
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+        .video {
+            background-color: #f1ffe4;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .video h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        video {
+            max-width: 90%;
+            height: auto;
+            border-radius: 30px; 
+        }
+
+        /* Contact Information Section Styles */
+.contact {
+    background-color: #f48c06;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title {
+
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 300px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-card:hover {
+    background-color: #f7d900;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.contact-icon {
+    font-size: 30px;
+    color: #f48c06;
+    margin-bottom: 10px;
+}
+
+.contact-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #777;
+}
+
+        /* Event Schedule Section Styles */
+/* Event Schedule Section Styles */
+.schedule {
+    background-color: #dcffbb;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.schedule h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    display: flex;
+    width: 80%;
+    margin: 20px 0;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(110, 165, 243, 0.863);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-icon {
+    background-color: #583eff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    font-size: 24px;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.event-icon i {
+    font-size: 40px;
+}
+
+.event-details {
+    padding: 20px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.event-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    font-size: 18px;
+    color: #555;
+}
+/* Icon styles */
+.fa-check-circle { color: #27ae60; }
+.fa-code { color: #3498db; }
+.fa-trophy { color: #f39c12; }
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .event {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .event-icon {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .event-icon i {
+        font-size: 32px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="pes.png" alt="Logo" style="max-width: 110px;">
+        </div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#brochure">Brochure</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#rules">Rules</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <!-- Logo in the top-left corner -->
+        <img class="top-left-logo" src="aad.jpeg" alt="Logo">
+
+        <!-- Header Section -->
+        <div class="header">
+            <p class="header-text">DEPARTMENT OF BBA AND BUSINESS ANALYTICS</p>
+            <h1 class="header-text">2090</h1>
+            <p class="header-text">"INNOVATE-2-SUSTAIN"!!!</p>
+            <!-- Countdown Timer -->
+            <div id="countdown-timer" class="countdown-timer">
+                <div class="timer">
+                    <span id="days">00</span>
+                    <span>Days</span>
+                </div>
+                <div class="timer">
+                    <span id="hours">00</span>
+                    <span>Hours</span>
+                </div>
+                <div class="timer">
+                    <span id="minutes">00</span>
+                    <span>Minutes</span>
+                </div>
+                <div class="timer">
+                    <span id="seconds">00</span>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <div class="event-link">
+                <a href="https://forms.gle/qd1NNi9E3wtKyW8m6" class="cta-button" href="">REGISTER NOW</a>
+            </div>
+        </div>
+
+        
+    <!-- In Association With Section -->
+<div class="association">
+    <h2>In Association With</h2>
+    <div class="association-logos">
+        <div class="logo-cube">
+            <div class="cube">
+                <div class="face front"><img src="kar_main_logo.png" alt="Kar Main Logo"></div>
+                <div class="face back"><img src="giz-logo.gif" alt="GIZ Logo"></div>
+                <div class="face right"><img src="kok.jpeg" alt="KOK Logo"></div>
+                <div class="face left"><img src="best.png" alt="BEST Logo"></div>
+                <div class="face top"><img src="lok.png" alt="LOK Logo"></div>
+                <div class="face bottom"><img src="lok.png" alt="lok Logo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- About the Event Section -->
+    <div class="about-event">
+        <h2>About the Event</h2>
+        <p>Welcome to 2090 Innovate-2-Sustain the Sustainability and Innovation Hackathon, a groundbreaking initiative that brings together visionaries, innovators, and change-makers to address pressing global challenges.</p>
+        <p>The hackathon is conducted by the Department of BBA and BBA in Business Analytics, Faculty of Management and Commerce offers a platform to create and develop solutions for real time problems existing in our country</p>
+        <p> This event is a collaborative effort between the Government of Karnataka, the United Nations Development Programme (UNDP), and the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ). Our collective aim is to drive sustainable solutions that make a real impact on our planet</p>
+    </div>
+
+    <!-- Key Highlights Section -->
+<div class="key-highlights">
+    <h2>Key Highlights</h2>
+    <p>🌱 Unlocking Tomorrow's Solutions Today! 🚀:</p>
+    <ul>
+        <div style="text-align: center;">
+            <div style="background-color: #4CAF50; color: white; padding: 20px; display: inline-block; margin: 10px;">
+                <h2 style="font-size: 24px; font-weight: bold;">Join the Sustainability Revolution</h2>
+                <p style="font-size: 18px;">Are you ready to code for a sustainable future?</p>
+            </div>
+        
+            <div style="background-color: #009688; color: white; padding: 20px; display: inline-block; margin: 10px;">
+                <h2 style="font-size: 24px; font-weight: bold;">Impact Lives Globally</h2>
+                <p style="font-size: 18px;">Tackle real-world problems recognized by National and International bodies.</p>
+            </div>
+        
+            <div style="background-color: #2196F3; color: white; padding: 20px; display: inline-block; margin: 10px;">
+                <h2 style="font-size: 24px; font-weight: bold;">Be a Sustainability Hero</h2>
+                <p style="font-size: 18px;">Your code can be the hero that saves the planet.</p>
+            </div>
+        
+            <div style="background-color: #FF5722; color: white; padding: 20px; display: inline-block; margin: 10px;">
+                <h2 style="font-size: 24px; font-weight: bold;">Shape the Future</h2>
+                <p style="font-size: 18px;">Influence government policies and UN initiatives with your solutions.</p>
+            </div>
+        
+            <div style="background-color: #E91E63; color: white; padding: 20px; display: inline-block; margin: 10px;">
+                <h2 style="font-size: 24px; font-weight: bold;">Become a Changemaker</h2>
+                <p style="font-size: 18px;">Connect with like-minded visionaries and create lasting social change.</p>
+            </div>
+        
+            <div style="background-color: #673AB7; color: white; padding: 20px; display: inline-block; margin: 10px;">
+                <h2 style="font-size: 24px; font-weight: bold;">Join the Mission</h2>
+                <p style="font-size: 18px;">Click on the register button above to start your adventure:</p>
+            </div>
+        
+            <div style="background-color: #FF9800; color: white; padding: 20px; display: inline-block; margin: 10px;">
+                <h2 style="font-size: 24px; font-weight: bold;">Shape a Sustainable Tomorrow</h2>
+                <p style="font-size: 18px;">Empower your coding skills to create a brighter future globally.</p>
+            </div>
+        </div>
+        
+        
+    &nbsp;
+    &nbsp;
+    <p>Prepare to embark on the adventure of a lifetime at "INNOVATE-2-SUSTAIN" and become a legendary hero in the tale of a sustainable world, impacting the lives of lakhs of people and contributing to global change! 🌍🏆</p>
+</div>
+
+
+    <!-- Event Brochure Section -->
+    <div class="brochure" id="brochure">
+        <h1>Event Brochures</h1>
+        <img src="honey.jpeg" alt="Event Brochure 2">
+    </div>
+
+    <!-- Event Schedule Section -->
+             <!-- Event Schedule Section -->
+<div class="schedule" id="schedule">
+    <h2>Event Schedule</h2>
+    <div class="timeline">
+        <!-- Event 1 -->
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 1 - Registration & Opening Ceremony</h3>
+                <p>Join us for the kick-off event and registration at 2:00 PM.</p>
+            </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 1 - Problem statement Challenges (Part 1)</h3>
+                <p>Engage in exciting Speaker Session 1 starting at 3:30 PM.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 1 - Round 1- REVOLUTION</h3>
+                <p>The teams must have a brief solution for the first 2 parameters according to their statement.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 1 - Round 2- IMPACT CATALYST</h3>
+                <p>The teams must have a brief solution for the next 2 parameters..</p>
+            </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 2 - Round 3- SOLUTION SYNTHESIS</h3>
+                <p>A final draft which includes a presentation and a report on the idea and its scope.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 2 - Pitching - 1</h3>
+                <p>Faculties will be visiting each team ; 15 teams will be short-listed</p>
+            </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 2 - RESILIENCE RALLY</h3>
+                <p>The 15 teams will work on the changes and improvisation</p>
+            </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 2 - Final Pitching</h3>
+                <p>The 15 teams will pitch in their ideas in front of judges</p>
+            </div>
+        </div>
+
+                
+        <div class="event">
+            <div class="event-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="event-details">
+                <h3>Day 2 - Announcement of Winners(5:00 PM)</h3>
+                <p>The top 10 teams will be announced and first 3 teams will receive a cash award and the best solutions will be incorporated into the respective industries</p>
+           </div>
+       </div>
+    </div>
+</div>
+
+    <!-- Team Section -->
+     <div class="team" id="team">
+         <h2>Our Team</h2>
+         <div class="volunteers">
+         <img src="boot.jpeg" alt="volunteers">
+    </div>
+</div>
+
+    <!-- Rules and Regulations Section -->
+    <!-- Rules and Regulations Section -->
+<div class="rules" id="rules">
+    <h2 class="section-title">🚀 Event Guidelines</h2>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-users"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text">Participants can Register in a team of 2.</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-shield"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text">Ethical conduct is expected from all participants throughout the event.</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-ban"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text">Cheating, plagiarism, or academic dishonesty will result in disqualification.</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text">Participants are advised to be present in appropriate attire.</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-clock"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text">Any fizzed/ coloured/ alcoholic beverages are strictly not permitted.</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-desktop"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text"> Participants should carry their own laptops and chargers..</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-gavel"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text"> Participants are not allowed to leave the designated area without informing the volunteers and this is applicable at all times..</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-camera"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text"> Participants have to wear their ID cards and badges at all times..</p>
+        </div>
+    </div>
+    <div class="rule">
+        <div class="rule-icon">
+            <i class="fas fa-ban"></i>
+        </div>
+        <div class="rule-content">
+            <p class="rule-text">Breach of rules may lead to disqualification.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Event Video Section -->
+    <div class="video" id="video">
+        <h1>Event Video</h1>
+        <div class="video-container">
+            <video controls autoplay loop muted>
+                <source src="oppo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Contact Information Section -->
+       <!-- Contact Information Section -->
+<div class="contact" id="contact">
+    <h2 class="section-title">Contact Information</h2>
+    <div class="contact-cards">
+        <!-- Contact Card 1 -->
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+                <h3>Email</h3>
+                <p class="contact-text">2090hackathon@pes.edu</p>
+            </div>
+        </div>
+
+        <!-- Contact Card 3 -->
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+                <h3>(Student Coordinator)</h3>
+                <h3>Akshay</h3>
+                <p class="contact-text">+91 8197180627</p>
+            </div>
+        </div>
+
+        <!-- Contact Card 3 -->
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+                <h3>(Student Coordinator)</h3>
+                <h3>Nishanth</h3>
+                <p class="contact-text">+91 9036059184</p>
+            </div>
+        </div>
+
+        <!-- Contact Card 4 -->
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+                <h3>(Student Coordinator)</h3>
+                <h3>Shreya</h3>
+                <p class="contact-text">+91 6362721865</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+ </div>
+<footer style="background-color: #393f4d; color: #fff; padding: 10px; text-align: center;">
+    &copy; 2023 "2090 INNOVATE-2-SUSTAIN". All rights reserved.
+</footer>
+</body>
+</html>
+
+    </div>
+
+    <!-- JavaScript for Countdown Timer -->
+    <script>
+        // Set the date and time for your event in the format: year, month (0-11), day, hour, minute, second
+        const eventDate = new Date(2023, 9, 13, 14, 0, 0); // September is month 8
+    
+        function updateCountdown() {
+            const currentDate = new Date();
+            const timeLeft = eventDate - currentDate;
+    
+            if (timeLeft <= 0) {
+                document.getElementById("countdown-timer").style.display = "none";
+                document.getElementById("countdown-message").style.display = "block"; // Display a message
+            } else {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+                document.getElementById("days").textContent = days.toString().padStart(2, "0");
+                document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
+                document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
+                document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+            }
+        }
+    
+        // Update the countdown timer every second
+        setInterval(updateCountdown, 1000); 
+    
+        // Initial call to set the timer
+        updateCountdown();
+    </script>    
+</body>
+</html>
